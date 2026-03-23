@@ -1,0 +1,30 @@
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Entornos virtuales
+venv/
+.env/
+.venv/
+
+# Variables sensibles
+.env
+
+# Logs
+*.log
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Builds
+dist/
+build/
+
+# Sistema
+.DS_Store
+Thumbs.db
