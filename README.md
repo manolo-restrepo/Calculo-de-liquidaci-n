@@ -1,10 +1,18 @@
 #  Calculadora de Liquidación Laboral
 
-**Desarrollado por:**
+### **Desarrollado por:**
+
 Santiago Gonzalez Orrego
+
 Kesman Posso Parra
 
- [Audio explicativo del proyecto](https://github.com/kesman0709/Calculo-de-liquidaci-n/blob/main/explicaci%C3%B3n%20del%20proyecto.m4a)
+Audio donde se explica acerca del proyecto: https://github.com/kesman0709/Calculo-de-liquidaci-n/blob/main/explicaci%C3%B3n%20del%20proyecto.m4a
+
+### **Interfáz desarrollada por:**
+
+Maria Paula Ospina 
+
+Manolo Restrepo
 
 ---
 
@@ -158,14 +166,14 @@ El sistema valida que:
 
 ---
 
-## ❗ Mensajes de Error
+##  Mensajes de Error
 
 En caso de datos inválidos, el sistema indica qué dato causó el problema y cómo corregirlo:
 
-- ❌ `SalarioInvalido`: "ERROR: El salario por hora debe ser mayor que cero. Se recibió salario_hora={valor}. Ingrese un valor positivo."
-- ❌ `DiasInvalidos`: "ERROR: Los días trabajados deben estar entre 1 y 30. Se recibió dias_trabajados={valor}."
-- ❌ `VacacionesInvalidas`: "ERROR: Las vacaciones pendientes no pueden ser negativas. Se recibió vacaciones_pendientes={valor}."
-- ❌ `IndemnizacionInvalida`: "ERROR: El valor de la indemnización no puede ser negativo. Se recibió valor_indemnizacion={valor}."
+-  `SalarioInvalido`: "salario_hora inválido: {salario_hora}"
+-  `DiasInvalidos`: "dias_trabajados inválidos: {dias_trabajados}"
+-  `VacacionesInvalidas`: "vacaciones_pendientes inválidas: {vacaciones_pendientes}"
+-  `IndemnizacionInvalida`: "valor_indemnizacion inválido: {valor}"
 
 ---
 
