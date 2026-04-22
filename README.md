@@ -141,7 +141,7 @@ El usuario debe ingresar:
 
 ---
 
-## ⚙️ Proceso del Sistema
+##  Proceso del Sistema
 
 El sistema asume una jornada laboral de **10 horas por día**, de acuerdo con los valores definidos en los casos de prueba.
 
