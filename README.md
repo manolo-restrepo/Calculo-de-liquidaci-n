@@ -200,34 +200,28 @@ tests/
 
 
 
-Ejecución del programa en Visual Studio Code
+## Ejecución del programa en Visual Studio Code
 
 Siga estos pasos para ejecutar la aplicación:
 
-1. Abrir el proyecto en VS Code
-Abra Visual Studio Code.
-Seleccione File > Open Folder.
-Elija la carpeta raíz del proyecto (donde se encuentra app.py, src, build, etc.).
-2. Ubicar el archivo principal
+### 1. Abrir el proyecto en VS Code
+- Abra Visual Studio Code.
+- Seleccione **File > Open Folder**.
+- Elija la carpeta raíz del proyecto (donde se encuentra `app.py`, `src`, `build`, etc.).
 
+### 2. Ubicar el archivo principal
 El archivo que ejecuta la interfaz es:
 
 src/view/payment_gui.py
-3. Abrir una terminal en VS Code
-Menú: Terminal > New Terminal
-Verifique que esté ubicado en la raíz del proyecto.
-4. Ejecutar el programa
 
+### 3. Abrir una terminal en VS Code
+- Menú: **Terminal > New Terminal**
+- Verifique que esté ubicado en la raíz del proyecto.
+
+### 4. Ejecutar el programa
 Ejecute el siguiente comando en la terminal:
 
+```bash
 python src/view/payment_gui.py
-
 Si su sistema usa python3, utilice:
-
 python3 src/view/payment_gui.py
-5. Verificación de entorno (opcional pero recomendado)
-
-Asegúrese de que:
-
-Python esté instalado (python --version)
-Las dependencias estén instaladas (si aplica, usando pip install -r requirements.txt)
