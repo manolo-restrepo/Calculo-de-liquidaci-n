@@ -23,7 +23,8 @@ Ejecute el siguiente comando en la terminal:
 python src/view/payment_gui.py
 Si su sistema usa python3, utilice:
 python3 src/view/payment_gui.py
-
+```
+---
 ## Opción 1 — Interfaz de consola (sin Kivy)
  
 **Paso 1 — Abrir la terminal**
