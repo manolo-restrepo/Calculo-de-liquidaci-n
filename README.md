@@ -190,6 +190,7 @@ El sistema mostrará:
 
 ```
 src/
+README - Contiene la información para la ejecución de la interfaz gráfica
   model/
     logica_liquidacion.py   — Contiene la lógica del sistema: validaciones y cálculo del total a pagar.
   view/
@@ -200,28 +201,4 @@ tests/
 
 
 
-## Ejecución del programa en Visual Studio Code
 
-Siga estos pasos para ejecutar la aplicación:
-
-### 1. Abrir el proyecto en VS Code
-- Abra Visual Studio Code.
-- Seleccione **File > Open Folder**.
-- Elija la carpeta raíz del proyecto (donde se encuentra `app.py`, `src`, `build`, etc.).
-
-### 2. Ubicar el archivo principal
-El archivo que ejecuta la interfaz es:
-
-src/view/payment_gui.py
-
-### 3. Abrir una terminal en VS Code
-- Menú: **Terminal > New Terminal**
-- Verifique que esté ubicado en la raíz del proyecto.
-
-### 4. Ejecutar el programa
-Ejecute el siguiente comando en la terminal:
-
-```bash
-python src/view/payment_gui.py
-Si su sistema usa python3, utilice:
-python3 src/view/payment_gui.py
