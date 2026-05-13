@@ -17,8 +17,8 @@ from model.logica_liquidacion import (
 class LiquidacionApp(App):
 
     def build(self):
+        self.title = "Calculadora de Liquidación Laboral"
         contenedor = GridLayout(cols=2, padding=20, spacing=10)
-
 
         contenedor.add_widget(Label(text="Salario por hora"))
         self.salario = TextInput(text="0")
@@ -40,11 +40,9 @@ class LiquidacionApp(App):
         self.indemnizacion = TextInput(text="0")
         contenedor.add_widget(self.indemnizacion)
 
-    
         self.resultado = Label(text="Resultado: ")
         contenedor.add_widget(self.resultado)
 
-        
         calcular = Button(text="Calcular")
         contenedor.add_widget(calcular)
 
@@ -82,35 +80,36 @@ class LiquidacionApp(App):
 
         if not self.salario.text.isnumeric():
             errores.append("- El salario por hora debe ser un número entero, sin puntos ni comas.\n  Ejemplo: 15000")
-    
+
         if not self.dias.text.isnumeric():
             errores.append("- Los días trabajados deben ser un número entero.\n  Ejemplo: 15")
-    
+
         if not self.vacaciones.text.isnumeric():
             errores.append("- Las vacaciones pendientes deben ser un número entero.\n  Ejemplo: 5")
-    
+
         if self.aplica.text not in ("0", "1"):
             errores.append("- El campo de indemnización debe ser 0 o 1.")
-    
+
         if not self.indemnizacion.text.isnumeric():
             errores.append("- El valor de indemnización debe ser un número entero, sin puntos ni comas.\n  Ejemplo: 500000")
-    
+
         if self.indemnizacion.text.isnumeric() and self.aplica.text == "0" and int(self.indemnizacion.text) > 0:
             errores.append(
-            "- Indicaste que NO aplica indemnización, pero ingresaste un monto de " + self.indemnizacion.text + ".\n"
-            "  Si no aplica, deja el valor en 0.\n"
-            "  Si sí aplica, cambia el campo a 1."
-        )
+                "- Indicaste que NO aplica indemnización, pero ingresaste un monto de " + self.indemnizacion.text + ".\n"
+                "  Si no aplica, deja el valor en 0.\n"
+                "  Si sí aplica, cambia el campo a 1."
+            )
 
         if errores:
             raise ValueError("\n\n".join(errores))
 
     def mostrar_error(self, err):
         contenido = GridLayout(cols=1)
-        contenido.add_widget(Label(text=str(err)))
+        contenido.add_widget(Label(text="Sección: Ingreso de datos del empleado\n\n" + str(err)))
+        contenido.add_widget(Label(text="¿Necesitas ayuda? Consulta el README en:\ngithub.com/manolo-restrepo/Calculo-de-liquidaci-n"))
         cerrar = Button(text="Cerrar")
         contenido.add_widget(cerrar)
-        popup = Popup(title="Error", content=contenido)
+        popup = Popup(title="Calculadora de Liquidación Laboral - Error", content=contenido)
         cerrar.bind(on_press=popup.dismiss)
         popup.open()
 
